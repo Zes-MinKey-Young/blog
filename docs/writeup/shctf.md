@@ -886,7 +886,7 @@ You are very much ON TIME, and in your TIME ZONE Destiny set up for you.
 
 下载附件可以看到含有正则过滤，仅允许数字、`+-*/[]()` 还有!符。这本身没啥毛病，但是谁家用eval来做计算器？JS里面的感叹号又不是阶乘。
 
-JSFuck正好就是只含有`!+()[]`6种字符。我们使用[jsfuck.com](jsfuck.com)把我们的攻击代码转为JSFuck即可。
+JSFuck正好就是只含有`!+()[]`6种字符。我们使用[jsfuck.com](https://jsfuck.com)把我们的攻击代码转为JSFuck即可。
 
 下面只给出原始代码，请自行在JSFuck网站转换（勾选Eval Source和Run In Parent Scope）。
 
