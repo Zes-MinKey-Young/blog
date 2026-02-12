@@ -17,7 +17,7 @@ const base = process.env.GITHUB_ACTIONS === 'true' ? '/blog/' : "/"
 export default defineConfig({
   // 继承博客主题(@sugarat/theme)
   extends: blogTheme,
-  // base,
+  base,
   lang: 'zh-cn',
   title: 'Minkey\'s Blog',
   description: 'Zes M Young 的博客',
