@@ -1,0 +1,87 @@
+// 主题独有配置
+import { getThemeConfig } from '@sugarat/theme/node'
+
+// 开启RSS支持（RSS配置）
+// import type { Theme } from '@sugarat/theme'
+
+// const baseUrl = 'https://sugarat.top'
+// const RSS: Theme.RSSOptions = {
+//   title: '粥里有勺糖',
+//   baseUrl,
+//   copyright: 'Copyright (c) 2018-present, 粥里有勺糖',
+//   description: '你的指尖,拥有改变世界的力量（大前端相关技术分享）',
+//   language: 'zh-cn',
+//   image: 'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
+//   favicon: 'https://sugarat.top/favicon.ico',
+// }
+
+const base = process.env.GITHUB_ACTIONS === 'true' ? '/blog/' : "/"
+
+// 所有配置项，详见文档: https://theme.sugarat.top/
+const blogTheme = getThemeConfig({
+  // 开启RSS支持
+  // RSS,
+
+  // 搜索
+  // 默认开启pagefind离线的全文搜索支持（如使用其它的可以设置为false）
+  // search: false,
+
+  // 默认关闭 markdown 图表支持（开启会增加一定的构建耗时）
+  // mermaid: false
+
+  // 页脚
+  footer: {
+    // message 字段支持配置为HTML内容，配置多条可以配置为数组
+    // message: '下面 的内容和图标都是可以修改的噢（当然本条内容也是可以隐藏的）',
+    copyright: 'CC BY-NC-SA 4.0 | Zes M Young',
+    // icpRecord: {
+    //   name: '蜀ICP备19011724号',
+    //   link: 'https://beian.miit.gov.cn/'
+    // },
+    // securityRecord: {
+    //   name: '公网安备xxxxx',
+    //   link: 'https://www.beian.gov.cn/portal/index.do'
+    // },
+  },
+
+  // 主题色修改
+  themeColor: 'el-blue',
+
+  // 文章默认作者
+  author: 'Zes M Young',
+
+  // 友链
+  friend: [
+    {
+      nickname: 'Phigros 自制谱 Wiki',
+      des: 'Phigros 自制谱知识的搬运工',
+      avatar: `${base}wikilogo.png`,
+      url: 'https://pgrfm.miraheze.org'
+    },
+    {
+      nickname: '粥里有勺糖',
+      des: 'Vitepress 主题作者',
+      avatar:
+        'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030~fmt.webp',
+      url: 'https://sugarat.top',
+    },
+    {
+      nickname: 'Vitepress',
+      des: 'Vite & Vue Powered Static Site Generator',
+      avatar:
+        'https://vitepress.dev/vitepress-logo-large.webp',
+      url: 'https://vitepress.dev/',
+    },
+  ],
+
+  // 公告
+  popover: {
+    title: '公告',
+    body: [
+      { type: 'text', content: '这个人很勤快，什么都写了。' }
+    ],
+    duration: 0
+  },
+})
+
+export { blogTheme }
