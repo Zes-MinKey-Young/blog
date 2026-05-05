@@ -82,6 +82,7 @@ const blogTheme = getThemeConfig({
     ],
     duration: 0
   },
+  
 })
 
 export { blogTheme }
