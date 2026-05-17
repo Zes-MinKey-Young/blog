@@ -68,6 +68,7 @@ jobs:
         run: |
           pnpm config set ignore-scripts false
           pnpm install --no-frozen-lockfile
+          pnpm approve-builds
         # 锁定依赖版本
         # run: pnpm install --frozen-lockfile
 
