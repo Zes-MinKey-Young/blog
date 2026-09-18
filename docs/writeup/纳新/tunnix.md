@@ -1,5 +1,5 @@
 # Tunnix
-昨天（9 月 16 日）Perseverance 询问在校外打靶场 PWN 题目的方法。他已经获知了在校外打 Web 题的方法：通过校 VPN 授权后，使用 `https://172-26-92-251-<port>-p.ivpn.hitwh.cn` 连接到靶机。（注意如果不是在浏览器里的话需要复制 Cookies 过去）
+昨天（9 月 16 日）Perseverance 询问在校外打靶场 PWN 题目的方法。他已经获知了在校外打 Web 题的方法：通过校 VPN 授权后，使用 `https://172-26-92-251-<port>-p.ivpn.hitwh.edu.cn` 连接到靶机。（注意如果不是在浏览器里的话需要复制 Cookies 过去）
 
 在昨天的尝试中，我们用 ttyd 搭建了一个 WebShell。然而它依赖 WebSocket，但校园 VPN 似乎并不支持 WebSocket。
 
